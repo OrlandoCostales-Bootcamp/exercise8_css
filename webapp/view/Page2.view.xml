@@ -1,0 +1,26 @@
+<mvc:View controllerName="com.ui5.training.exer7css.controller.Page2"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    
+    <Page id="page2" title="Page 2" showNavButton="true" navButtonPress=".onNavBack">
+    <customHeader>
+        <Bar class="myHeaderBar">
+        <contentMiddle>
+            <Title text="{i18n>p2Title}"
+            class="myHeaderTitle"/>
+        </contentMiddle>
+        </Bar>
+    </customHeader>
+ 
+    <footer>
+      <Bar class="myFooterBar">
+        <contentLeft>
+          <Button text="{i18n>gp1}" press=".onGoPage1"/>
+        </contentLeft>
+        <contentRight>
+          <Button text="{i18n>showM}" press=".onShowMsg"/>
+        </contentRight>
+      </Bar>
+    </footer>
+  </Page>
+</mvc:View>

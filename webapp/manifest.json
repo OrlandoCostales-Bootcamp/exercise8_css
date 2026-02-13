@@ -1,0 +1,95 @@
+{
+  "_version": "1.81.0",
+  "sap.app": {
+    "id": "com.ui5.training.exer7css",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "applicationVersion": {
+      "version": "0.0.1"
+    },
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "resources": "resources.json",
+    "sourceTemplate": {
+      "id": "@sap/generator-fiori:basic",
+      "version": "1.20.2",
+      "toolsId": "4239a56d-2744-4dd1-aa87-110c423dac71"
+    }
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "icons": {
+      "icon": "",
+      "favIcon": "",
+      "phone": "",
+      "phone@2": "",
+      "tablet": "",
+      "tablet@2": ""
+    },
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "flexEnabled": true,
+    "dependencies": {
+      "minUI5Version": "1.144.1",
+      "libs": {
+        "sap.m": {},
+        "sap.ui.core": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "com.ui5.training.exer7css.i18n.i18n"
+        }
+      }
+    },
+    "resources": {
+      "css": [
+        {
+          "uri": "css/style.css"
+        }
+      ]
+    },
+    "routing": {
+      "config": {
+        "routerClass": "sap.m.routing.Router",
+        "controlAggregation": "pages",
+        "controlId": "app",
+        "transition": "slide",
+        "type": "View",
+        "viewType": "XML",
+        "path": "com.ui5.training.exer7css.view",
+        "async": true,
+        "viewPath": "com.ui5.training.exer7css.view"
+      },
+      "routes": [
+        { "pattern": "", "name": "page1", "target": "page1" },
+        { "pattern": "page2", "name": "page2", "target": "page2" }
+      ],
+      "targets": {
+        "TargetMain": {
+          "id": "Main",
+          "name": "Main"
+        },
+        "page1": { "viewName": "Page1", "viewId": "Page1", "viewLevel": 1 },
+        "page2": { "viewName": "Page2", "viewId": "Page2", "viewLevel": 2 }
+      }
+    },
+    "rootView": {
+      "viewName": "com.ui5.training.exer7css.view.App",
+      "type": "XML",
+      "id": "App",
+      "async": true
+    }
+  }
+}

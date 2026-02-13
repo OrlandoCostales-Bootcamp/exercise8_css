@@ -1,0 +1,25 @@
+/* HEADER STYLING */
+.myHeaderBar {
+    background-color: #49922c !important;
+}
+ 
+.myHeaderTitle {
+    color: white !important;
+}
+ 
+ 
+/* FOOTER STYLING */
+.myFooterBar {
+    background-color: #b69ce5 !important;
+}
+ 
+
+/* Message Box Header Background */
+.sapMDialogTitleGroup .sapMBar {
+    background-color:  #e622d5 !important;
+}
+
+.sapMDialogTitle {
+  color: #0070f2 !important;
+  font-weight: 800 !important;
+}
